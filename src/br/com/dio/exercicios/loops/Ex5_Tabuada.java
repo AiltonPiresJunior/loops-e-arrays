@@ -20,10 +20,17 @@ public class Ex5_Tabuada {
 
         System.out.println("Tabuada: ");
         int tabuada = scan.nextInt();
-
+        int count = 1;
         System.out.println("Tabuada de " + tabuada);
-        for(int i = 1; i <= 10; i = i + 1) {
-            System.out.println(tabuada + " X " + i + " = " + (tabuada*i));
+//        for(int i = 1; i <= 10; i ++) {
+//            System.out.println(tabuada + " X " + i + " = " + (tabuada*i));
+//        }
+
+        while (count<=10){
+            int calculo = tabuada * count;
+            System.out.println(tabuada + "X" + count + "=" + calculo);
+
+            count++;
         }
     }
 
