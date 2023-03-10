@@ -14,7 +14,7 @@ public class Ex2_Nota {
 
         int nota;
 
-        System.out.println("Nota: ");
+        System.out.println("Insira uma nota (entre 0 e 10): ");
         nota = scan.nextInt();
 
         while(nota < 0 | nota > 10) {
