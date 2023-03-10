@@ -14,20 +14,24 @@ public class Ex4_ParEImpar {
         int quantNumeros;
         int numero;
         int quantPares = 0, quantImpares = 0;
+        int count = 0;
 
         System.out.println("Quantidade de números: ");
         quantNumeros = scan.nextInt();
 
-        int count = 0;
-        do {
+        while(count < quantNumeros){
             System.out.println("Número: ");
             numero = scan.nextInt();
 
-            if (numero % 2 == 0 ) quantPares++;
-            else quantImpares++;
+            if (numero % 2 == 0 ){
+                quantPares++;
+            }
+            else {
+                quantImpares++;
+            }
 
             count++;
-        } while(count < quantNumeros);
+        }
 
         System.out.println("Quantidade Par: " + quantPares);
         System.out.println("Quantidade Ímpar: " + quantImpares);
