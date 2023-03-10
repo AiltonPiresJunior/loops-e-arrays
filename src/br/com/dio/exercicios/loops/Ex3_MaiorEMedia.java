@@ -16,19 +16,21 @@ public class Ex3_MaiorEMedia {
         int soma = 0;
 
         int count = 0;
-        do {
-            System.out.println("Número: ");
+
+        while(count<5){
+            System.out.println("Insira um número: ");
             numero = scan.nextInt();
 
-            soma = soma + numero;
+            if (numero > maior) {
+                maior = numero;
+            }
 
-            if (numero > maior) maior = numero;
+            soma += numero;
+            count ++;
+        }
 
-            count = count + 1;
-        } while(count < 5);
-
-        System.out.println("Maior: " + maior);
-        System.out.println("Média: " + (soma/5));
+        System.out.println("O maior numero é: " + maior);
+        System.out.println("A média é: " + (soma/5));
 
     }
 }
